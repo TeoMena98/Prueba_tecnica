@@ -1,0 +1,22 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: #333; /* Cambia el color de fondo según tus preferencias */
+  color: white;
+}
+
+/* Container Styles */
+.container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Add your additional styles below this line */

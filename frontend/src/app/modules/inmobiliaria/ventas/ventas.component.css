@@ -1,0 +1,49 @@
+.middle {
+  margin: 50px;
+}
+
+.title {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0);
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #333;
+  color: white;
+}
+
+.table td {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect on table rows */
+.table tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Add a bit of space between header cells */
+.table th:not(:first-child) {
+  margin-left: 5px;
+}
+
+/* Add a subtle transition effect on hover */
+.table tr {
+  transition: background-color 0.3s ease;
+}

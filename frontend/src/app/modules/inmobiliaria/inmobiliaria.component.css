@@ -1,0 +1,33 @@
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white; /* Cambia el color según tu tema */
+  text-decoration: none;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-right: 16px; /* Ajusta el espaciado entre elementos según tus preferencias */
+}
+
+.nav-list a {
+  padding: 8px;
+  border-radius: 8px;
+  color: white; /* Cambia el color según tu tema */
+  text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a:active {
+  background: rgba(255, 255, 255, 0.1); /* Ajusta según tus preferencias de color */
+}
+
+.flex-spacer {
+  flex: 1;
+}

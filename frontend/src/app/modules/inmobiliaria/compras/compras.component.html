@@ -1,0 +1,40 @@
+<div class="middle">
+  <div class="title">
+    <h1>PROYECTOS</h1>
+    <button mat-mini-fab (click)="addMarcador()">
+      <mat-icon>library_add</mat-icon>
+    </button>
+  </div>
+
+  <div class="project">
+    <div class="map">
+      <google-map width="100%" [center]="currentPosition">
+        <map-marker
+          *ngFor="let mark of markers"
+          [position]="mark.position"
+          [label]="mark.label"
+          (click)="selectMarcador($event)"
+        >
+        </map-marker>
+      </google-map>
+    </div>
+
+    <ul>
+      <li *ngFor="let mark of markers">
+        <div class="marks">
+          <div class="actions">
+            <button (click)="deleteMarcador(mark.id)" mat-mini-fab color="secondary">
+              <mat-icon>delete_sweep</mat-icon>
+            </button>
+            <button (click)="editMarcador(mark)" mat-mini-fab color="secondary">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </div>
+          <span class="mark" (click)="focusMarcador(mark.position)">
+            {{ mark.label.text }}
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

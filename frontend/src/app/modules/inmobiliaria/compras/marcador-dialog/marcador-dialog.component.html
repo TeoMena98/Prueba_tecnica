@@ -1,0 +1,27 @@
+<div class="dialog">
+  <h1>ADD MARK</h1>
+
+  <form (submit)="onSubmit()" [formGroup]="marcadorForm">
+    <mat-form-field class="init-login__control">
+      <mat-label>Descripcion</mat-label>
+      <input formControlName="desc" matInput type="text" />
+    </mat-form-field>
+
+    <mat-form-field class="init-login__control">
+      <mat-label>Latitud</mat-label>
+      <input formControlName="lat" matInput type="number" />
+    </mat-form-field>
+
+    <mat-form-field class="init-login__control">
+      <mat-label>Longitud</mat-label>
+      <input formControlName="lng" matInput type="number" />
+    </mat-form-field>
+
+    <div class="actions">
+      <button mat-raised-button type="button" (click)="onCancel()">
+        Cancelar
+      </button>
+      <button mat-raised-button color="primary">Guardar</button>
+    </div>
+  </form>
+</div>
